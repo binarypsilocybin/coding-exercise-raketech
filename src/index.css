@@ -1,13 +1,107 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: #dbdee2;
+  color: #4e4e4e;
+}
+
+img {
+  width: 30px;
+  vertical-align: middle;
+}
+
+button {
+  padding: 1rem 1rem;
+  border-radius: 40px;
+  background-color: #ac0909;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: none;
+  margin: 3rem auto;
+  width: 179px;
+  display: block;
+}
+
+button:hover {
+  background-color: #8b0d0d;
+}
+
+@media (max-width: 1100px) {
+  html {
+    font-size: 0.8rem;
+  }
+}
+
+main {
+  max-width: 940px;
+  margin: 5rem auto;
+}
+
+section {
+  padding: 2rem 1rem 1rem 1rem;
+  box-shadow: -1px 0px 2px 4px #d0d3da;
+  background-color: #f6f6f6;
+  border-radius: 1rem;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.label {
+  display: grid;
+  grid-template-columns: minmax(20px, 40px) 1fr 3fr 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin-bottom: 1rem;
+}
+
+.table-grid {
+  display: grid;
+  grid-template-columns: minmax(20px, 40px) 1fr 3fr 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  background-color: #ebebeb;
+  border-radius: 2rem;
+}
+
+.table-grid > span {
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+.form-items {
+  display: flex;
+  gap: 0.2rem;
+}
+
+.table-id {
+  text-align-last: center;
+  color: #9b9797;
+}
+
+.table-.team {
+  font-weight: bold;
+  color: #3a3a3b;
+}
+
+@media only screen and (max-width: 640px) {
+  .grid {
+    display: grid;
+    grid-template-columns: minmax(20px, 20px) 1fr 85px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .form-items {
+    flex-direction: column;
+  }
+  section {
+    margin: 0.5rem;
+  }
 }
